@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#020202"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/space9dp"
+        android:background="@color/antiquewhite"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/estilotextview"
+            android:fontFamily="serif-monospace"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space45dp"
+            app:srcCompat="@drawable/trabajador" />
+
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space45dp"
+            android:layout_marginRight="@dimen/space20dp"
+            android:background="@drawable/estilotextview"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/space18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/space20dp"
+            android:layout_marginTop="@dimen/space20dp"
+            android:layout_marginRight="@dimen/space20dp"
+            android:background="@drawable/estilotextview"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/space18dp" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="@dimen/space20dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/estiloboton"
+            android:gravity="center"
+            android:text="INGRESAR"
+            android:textColor="@color/white"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acercade">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@color/colorToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorToolBar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Autor"
+                            android:fontFamily="cursive"
+                            android:textAlignment="center"
+                            android:textSize="24dp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:background="@android:color/transparent"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".90"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_marginRight="0dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/BtnCerrarAutor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF" >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="3dp"
+                            android:layout_margin="0dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/aqua"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:background="#FCF9F9"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/tvInfo3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="Información Desarrollador"
+                                        android:textColor="@color/black" />
+
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:id="@+id/foto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_doc_dr"
+                                    android:layout_width="383dp"
+                                    android:layout_height="51dp"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_horizontal"
+                                    android:text=" BERTHA MARISOL ORTIZ RAMOS
+                                                       JONH ALI RAMIREZ RODRIGUEZ
+
+
+                                        "
+                                    android:textAlignment="center"
+                                    android:textAppearance="@android:style/TextAppearance"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_doc_dr1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="ITCA_FEPADE ZACATECOLUCA:"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_nombre_dr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="TECNICOS EN SISTEMA INFORMATICO"
+                                    android:textAppearance="@android:style/TextAppearance"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/tiEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:textColorHint="@color/colorAccent">
+
+                                    <EditText
+                                        android:id="@+id/et_email1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Introduzca E-mail del Responsable"
+                                        android:inputType="textEmailAddress"
+                                        android:textSize="12dp"
+                                        android:visibility="gone" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_gr2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <Button
+                                        android:id="@+id/btnEdit1"
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Guardar" />
+
+                                    <Button
+                                        android:id="@+id/btnCancelar"
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Cancelar" />
+
+                                    <Button
+                                        android:id="@+id/btnClose1"
+                                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="Cerrar" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tv_directorioPortal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#3F3F3E"
+                            android:text="Directorio Portal Web: "
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+
